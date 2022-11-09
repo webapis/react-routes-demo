@@ -1,15 +1,15 @@
 
 import './App.css';
-import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import {Routes,Route,HashRouter} from 'react-router-dom'
 import Contacts from './pages/Contacts';
 import Home from './pages/Home';
 function App() {
-  return <BrowserRouter>
+  return <HashRouter>
   <Routes>
     <Route path='/' element={<Home/>}/>
     <Route path='contacts' element={<Contacts/>}/>
   </Routes>
-  </BrowserRouter>
+  </HashRouter>
 }
 
 export default App;
